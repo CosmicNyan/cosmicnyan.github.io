@@ -1,7 +1,7 @@
-div {
+div:not(.indent) {
   /*background-color: rgba(256, 256, 256, 0.75);*/
   padding: 1vw;
-  margin: 2vw 1vw;
+  margin: 5vw 5vw;
   max-width: 100vw;
   background-image: url('https://static.miraheze.org/baldisbasicswiki/f/f7/Page_bgc.png');
 }
@@ -12,19 +12,11 @@ body {
 }
 
 * {
-    font-size: 1.75vh;
-}
-
-h1 {
-    font-size: 4vh;
-}
-
-h2 {
-    font-size: 3vh;
-}
-
-* {
     font-family:'Comic Sans MS','Comic Sans','ChalkboardSE-Regular','Rebus Script',sans-serif;
     image-rendering: crisp-edges;
     image-rendering: pixelated;
+}
+
+.indent>*:not(h1) {
+    margin-left: 100px;
 }
