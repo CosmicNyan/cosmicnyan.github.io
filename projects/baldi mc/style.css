@@ -1,0 +1,23 @@
+div:not(.indent) {
+  /*background-color: rgba(256, 256, 256, 0.75);*/
+  padding: 1vw;
+  margin: 5vw 5vw;
+  max-width: 100vw;
+  background-image: url('https://static.miraheze.org/baldisbasicswiki/f/f7/Page_bgc.png');
+}
+body {
+    background-image: url('fog left.png'), url('fog right.png'), url('sky.png');
+    background-repeat: no-repeat, no-repeat, repeat;
+    background-attachment: fixed, fixed, scroll;
+    background-position: left, right, top left;
+}
+
+* {
+    font-family:'Comic Sans MS','Comic Sans','ChalkboardSE-Regular','Rebus Script',sans-serif;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+}
+
+.indent>*:not(h1) {
+    margin-left: 100px;
+}
